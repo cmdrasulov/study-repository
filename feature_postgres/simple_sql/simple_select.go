@@ -47,9 +47,6 @@ func SelectRows(ctx context.Context, conn *pgx.Conn) ([]Task, error) {
 			return nil, err
 		}
 
-		// Печать одной задачи
-		// printTask(t)
-
 		tasks = append(tasks, t)
 	}
 
